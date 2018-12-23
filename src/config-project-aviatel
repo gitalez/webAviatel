@@ -1,0 +1,183 @@
+
+git config --global alias.lg "log --online --decorat --all --graph"
+
+git config --global user.email "alejandrozangari@gmail.com"
+git config --global user.name "Alejandro zangari"
+
+ng serve -o
+
+Git init // para cada proyecto nuevo 
+
+git status 
+git add .  // guarda lo ultimo 
+
+git commit -m "primer commit"
+
+
+git checkout -- .  // reconstruye lo borrado accidentalmente , 
+hasta el momento del suceso 
+hasta el ultimo commit
+
+
+ng g c shared/header --spec=false 
+
+ng g c shared/footer --spec=false 
+
+ng g c pages/portafolio --spec=false 
+
+ng g c pages/about --spec=false 
+
+ng g c pages/item --spec=false 
+
+si en el path de : 
+
+  {path: '', component: PortafolioComponent },
+
+  lo ponemos vacio , podemos tener problemas con el routerlinkactive
+
+hacemos un json con info de la empresa 
+y lo guardamos en assets
+cuando  escribimos un json lo comprobamos en 
+
+http://json.parser.online.fr/ 
+
+
+en esta pag hacemos copy paste y nos da los errores que cometimos
+
+el json  la leemos desde un servicio 
+
+ng g s services/infoPagina --spec=false 
+
+// para leer los json inyecto el httpClient Module 
+
+para manejar el json 
+hago una interface 
+
+
+cmd a // para seleccionar un contenido 
+
+
+para que funcionara el animated tuve que cambiar  scss por css en el angular.json
+
+parece  que cuando cree el proyecto lo hice para scss
+
+una vez creado el proyecto en firebase y creado los documentos 
+
+en equipo nos dara una url como esta 
+
+https://producto-db-avia.firebaseio.com/equipo
+
+la ponemos en el navegador y agregamos .json
+
+https://producto-db-avia.firebaseio.com/equipo.json
+
+nos dara el json del la base de datos equipo ( ver firebase )
+
+para almacenar fotos usamos el storage 
+
+y rescribimos las reglas 
+
+service firebase.storage {
+  match /b/{bucket}/o {
+    match /{allPaths=**} {
+      allow read, write: if request.auth != null;
+    }
+  }
+}
+
+por 
+
+service firebase.storage {
+  match /b/{bucket}/o {
+    match /{allPaths=**} {
+      allow read : if true;
+    }
+  }
+}
+
+luego en la opcion archivo subimos las fotos que queremos 
+las que estan en el proyecto
+
+
+ng g s services/productos --spec=false
+
+// creamos la interfaz  de productos_idx 
+
+vamos a fire base obtenemos el json 
+lo colocamos en la url agregando .json 
+lo copiamos 
+vamos a code 
+cmdN 
+abre un file 
+lo pegamos 
+hacemos shit cmd P 
+
+ponmos json se nos abre json to ts convert 
+click 
+y copiamos el resiltado en un file 
+
+
+
+
+/// desplegar la app en preporoduccion
+
+ng build --prod 
+
+
+nos deja una carpeta dist en nuestro proyecto 
+
+luego lo tenemos que probar en un local host 
+
+buscamos npm http-server  
+
+// para ghacer pruebas rapidas 
+
+
+ sudo npm i -g http-server 
+
+nos permite probar un server http 
+
+
+
+vamos a la carpeta dist/aviatel
+comando : http-server -o
+
+aparentemente la carpeta dist/aviatel fue para correr el http-server local  
+
+
+// subimos github  
+
+
+creamos el protyecto y nos da 
+
+echo "# webAviatel" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/gitalez/webAviatel.git
+git push -u origin master
+
+git remote add origin https://github.com/gitalez/webAviatel.git
+git push -u origin master
+
+movemos  el folder aviatel que esta dentro de dist 
+y lo colocamos a nivel del proyecto 
+queda a nivel folder 
+dist 
+aviatel
+
+borramos dist 
+y renombramos aviatel por docs 
+porque github lee una carpeta  docs para desplegar la web 
+
+quitamos en el index href = "/" en los dos index  
+
+volvemos a la carpeta donde se creo el proyecto ( aviatel)
+
+y subimos al github  
+
+
+
+
+
+
