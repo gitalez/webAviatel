@@ -13,6 +13,10 @@ import { ItemComponent } from './pages/item/item.component';
 import { BlogComponent } from './pages/blog/blog.component';
 import { DocsComponent } from './pages/docs/docs.component';
 import { SearchComponent } from './pages/search/search.component';
+import { IotComponent } from './pages/iot/iot.component';
+
+import { ContactoComponent } from './pages/contacto/contacto.component';
+
 
 
 @NgModule({
@@ -25,7 +29,9 @@ import { SearchComponent } from './pages/search/search.component';
     ItemComponent,
     BlogComponent,
     DocsComponent,
-    SearchComponent
+    SearchComponent,
+    IotComponent,
+    ContactoComponent
   ],
   imports: [
     BrowserModule,

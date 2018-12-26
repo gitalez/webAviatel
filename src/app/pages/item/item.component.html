@@ -10,78 +10,115 @@
     </header>
 
     <div class="ae-container-fluid">
-
-      <!-- subtitulo 1 -->
       <div class="ae-grid ae-grid--collapse rk-portfolio-info ">
         <div class="ae-grid__item item-lg-8 item-sm--center au-xs-ta-center au-lg-ta-left">
           <h2 class="rk-portfolio-inner-title ">{{producto.subtitulo1}}</h2>
         </div>
 
-        <!-- info de creacion del producto  -->
         <div class="ae-grid__item item-lg-4 au-xs-ta-center au-lg-ta-right rk-portfolio-details">
-          <p class="rk-portfolio-inner-client "><span class="ae-lambda">Client: </span><span class="ae-u-bolder">Agency Design Studio</span></p>
-          <p class="au-underline rk-portfolio-inner-website "><a href="#0" class="ae-kappa">www.agencydesign.com</a></p>
-          <p class="ae-kappa ae-u-bold rk-portfolio-inner-date ">12 August, 2015</p>
+          <p class="rk-portfolio-inner-client "><span class="ae-lambda">Diseñado: </span><span class="ae-u-bolder">en dpto desarrollo Aviatel</span></p>
+          <p class="rk-portfolio-inner-client "><span class="ae-lambda">Fabricacion y montage: </span><span class="ae-u-bolder">en nuestra fabrica</span></p>
+          <p class="rk-portfolio-inner-client "><span class="ae-lambda">Creado: </span><span class="ae-u-bolder">{{producto.fecha}}</span></p>
         </div>
       </div>
     </div>
 
     <div class="ae-container-fluid ae-container-fluid--inner rk-portfolio--inner">
-      <div class="ae-grid ae-grid--collapse au-xs-ptp-1">
+      
+      <!-- subtitulo 1  -->
+      <div *ngIf= "producto.subtitulo1">
+        <div class="ae-grid ae-grid--collapse au-xs-ptp-1">
         <div class="ae-grid__item item-lg-5 au-lg-ptp-1">
           <h4 class="ae-u-bolder">{{producto.subtitulo1}}</h4>
           <p class="ae-eta">{{producto.desc1}}</p>
         </div>
-        <div class="ae-grid__item item-lg-6 item-lg--offset-1"><img src="assets/productos/{{id}}/pic-1.jpg" alt=" aviatel Portfolio"></div>
+        <div class="ae-grid__item item-lg-6 item-lg--offset-1">
+          <img src="assets/productos/{{id}}/pic-1.jpg" alt=" aviatel Portfolio">
+        </div>
+        </div>
+        <br>
       </div>
 
-
-
-      <div class="ae-grid ae-grid--collapse">
-        <div class="ae-grid__item item-lg-8"><img src="assets/productos/{{id}}/pic-2.jpg" alt="aviatel  Portfolio"></div>
+      <!-- subtitulo 2 -->
+      <div *ngIf= "producto.subtitulo2">
+        <div class="ae-grid ae-grid--collapse">
+        <div class="ae-grid__item item-lg-8">
+          <img src="assets/productos/{{id}}/pic-2.jpg" alt="aviatel Portfolio">
+        </div>
         <div class="ae-grid__item item-lg-3 item-lg--offset-1 au-lg-ptp-1">
-          <p>{{producto.desc2}}</p>
-          <p class="au-mb-3">{{producto.desc2}}</p>
           <p class="ae-u-bolder">{{producto.subtitulo2}}</p>
+          <p class="au-mb-3">{{producto.desc2}}</p>
         </div>
-      </div>
-<!--
- <div class="ae-grid ae-grid--collapse au-xs-ptp-1 au-xs-pbp-1">
-        <div class="ae-grid__item item-lg-8 item-lg--offset-2">
-          <h4 class="ae-u-bolder">Full Wide Text</h4>
-          <p class="ae-eta">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <p class="ae-eta">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.</p>
         </div>
+        <br>
       </div>
-      <div class="ae-grid ae-grid--collapse">
-        <div class="ae-grid__item item-lg--auto"><img src="assets/img/project-1.jpg" alt="Urku Portfolio"></div>
+
+      <!-- subtitulo 3  -->
+      <div *ngIf= "producto.subtitulo3">
+        <div class="ae-grid ae-grid--collapse">
+        <div class="ae-grid__item item-lg--auto">
+          <img src="assets/productos/{{id}}/pic-3.jpg" alt="Aviatel Portfolio">
+        </div>
+        <div class="ae-grid__item item-lg-3 item-lg--offset-1 au-lg-ptp-1">
+            <p class="ae-u-bolder">{{producto.subtitulo3}}</p>
+            <p class="au-mb-3">{{producto.desc3}}</p>
+          </div>
+        </div>
+        <br>
       </div>
-      <div class="ae-grid ae-grid--collapse">
-        <div class="ae-grid__item item-lg-6"><img src="assets/img/inner-3.jpg" alt="Urku Portfolio"></div>
+
+      <!-- subtitulo 4  -->
+      <div *ngIf= "producto.subtitulo4">
+        <div class="ae-grid ae-grid--collapse">
+        <div class="ae-grid__item item-lg-6">
+          <img src="assets/productos/{{id}}/pic-4.jpg" alt="Aviatel Portfolio">
+        </div>
         <div class="ae-grid__item item-lg-5 item-lg--offset-1 au-lg-ptp-1">
-          <h4 class="ae-u-bolder">Right Box Text</h4>
-          <p class="ae-eta">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
-          <p class="ae-eta">It includes a A6 flyer, A5 folder, A4 horizontal paper and a business card mockup. You can easily put your own graphics and create a new layout according to your needs.</p>
+          <h4 class="ae-u-bolder">{{producto.subtitulo4}}</h4>
+          <p class="ae-eta">{{producto.desc4}}</p>
+        </div>
         </div>
       </div>
-      <div class="ae-grid--alt test">
+<br>
+<br>
+
+      <!-- subtitulo 5 -->
+      <div *ngIf= "producto.subtitulo5">
+        <div class="ae-grid--alt test">
         <div class="ae-grid__item--alt item-sm--auto item-sm--offset-1 item-lg--offset-0 item-sm--end item-sm--bottom">
           <div class="ae-grid ae-grid--alt8 au-xs-ta-center au-sm-ta-left">
-            <div class="ae-grid__item--alt8 item-lg-6"><span class="ae-u-boldest">1.</span>
-              <p class="au-mt-1">Suspendisse ultricies tellus eget nisl molestie, quis sagittis mauris placerat.</p><span class="ae-u-boldest">2.</span>
-              <p class="au-mt-1">Pellentesque et nulla pulvinar, bibendum quam ac, cursus turpis.</p>
+            <div class="ae-grid__item--alt8 item-lg-6">
+              <span class="ae-u-boldest">1.</span>
+              <p class="au-mt-1">{{producto.ressalt1}}</p>
+              <span class="ae-u-boldest">2.</span>
+              <p class="au-mt-1">{{producto.ressalt2}}</p>
             </div>
-            <div class="ae-grid__item--alt8 item-lg-6"><span class="ae-u-boldest">3.</span>
-              <p class="au-mt-1">Sed quam odio, blandit sit amet dapibus id, aliquet sollicitudin enim. </p><span class="ae-u-boldest">4.</span>
-              <p class="au-mt-1">Morbi hendrerit laoreet lectus a fringilla.</p>
+            <div class="ae-grid__item--alt8 item-lg-6">
+              <span class="ae-u-boldest">3.</span>
+              <p class="au-mt-1"> {{producto.ressalt3}}</p>
+              <span class="ae-u-boldest">4.</span>
+              <p class="au-mt-1">{{producto.ressalt4}}</p>
             </div>
           </div>
         </div>
-        <div class="ae-grid__item--alt item-sm--auto item-lg-3 item-lg--offset-1 item-lg--end"><img src="assets/img/inner-4.jpg" alt="Urku Portfolio"></div>
+        <div class="ae-grid__item--alt item-sm--auto item-lg-3 item-lg--offset-1 item-lg--end">
+          <img src="assets/productos/{{id}}/pic-5.jpg" alt="Aviatel  Portfolio">
+        </div>
+        </div>
       </div>
--->
-     
-    </div>
 
+      <div *ngIf= "producto.fullTextTitulo">
+      <!-- full text  -->
+      <div class="ae-grid ae-grid--collapse au-xs-ptp-1 au-xs-pbp-1">
+          <div class="ae-grid__item item-lg-8 item-lg--offset-2">
+            <h4 class="ae-u-bolder">{{producto.fullTextTitulo}}</h4>
+            <p class="ae-eta">{{producto.desc1_fullText}}</p>
+            <p class="ae-eta">{{producto.desc2_fullText}}</p>
+          </div>
+      </div>
+      </div>
+
+
+    </div>
   
   </section>

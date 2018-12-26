@@ -119,7 +119,7 @@ y copiamos el resiltado en un file
 
 
 
-/// desplegar la app en preporoduccion
+/// desplegar la app en pre-produccion
 
 ng build --prod 
 
@@ -130,10 +130,10 @@ luego lo tenemos que probar en un local host
 
 buscamos npm http-server  
 
-// para ghacer pruebas rapidas 
+// para hacer pruebas rapidas 
 
 
- sudo npm i -g http-server 
+ sudo npm i -g http-server  // por unica vez en nuestra pc
 
 nos permite probar un server http 
 
@@ -142,10 +142,8 @@ nos permite probar un server http
 vamos a la carpeta dist/aviatel
 comando : http-server -o
 
-aparentemente la carpeta dist/aviatel fue para correr el http-server local  
 
-
-// subimos github  
+// subimos github  , no solo para guardar , sino para desplegar una app web gratuita 
 
 
 creamos el protyecto y nos da 
@@ -175,6 +173,57 @@ quitamos en el index href = "/" en los dos index
 volvemos a la carpeta donde se creo el proyecto ( aviatel)
 
 y subimos al github  
+
+despues que hacemos el commit 
+
+ejecutamos 
+
+git remote add origin https://github.com/gitalez/webAviatel.git
+
+luego 
+
+git push -u origin master
+
+
+una vez que la app esta en el repo 
+
+tenemos que publicar docs  en github page 
+
+vamos a setting 
+
+vamos a github pages 
+click en none 
+seleccionamos master branch/docs folder  
+ y save 
+
+ nos dice  que el sitio va a ser desplegado en : 
+
+
+
+Your site is ready to be published at https://gitalez.github.io/webAviatel/. 
+
+
+//// modificamos bastante  hoy es 26/12 lo  hacemos por segunda vez
+
+borramos el docs anterior 
+
+hacemos :
+
+ng build --prod 
+genera la carpeta dist 
+dentro de dist genera un folder aviatel 
+con el finder lo ponemos a nivel raiz y luego lo renombramo a docs
+
+hacemos 
+ git status
+
+git add .
+
+git status 
+
+git commit -m "26-12-18 commit"
+
+
 
 
 

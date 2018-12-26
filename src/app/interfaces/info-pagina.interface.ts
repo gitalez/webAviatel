@@ -16,6 +16,7 @@
   twitter?: string;
   instagram?: string;
   tublr?: string;
+  admin?: string;
   equipo_trabajo?: any[];
 }
 

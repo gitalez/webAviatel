@@ -1288,10 +1288,12 @@ body {
 
 .rk-portfolio-title {
   letter-spacing: .0359em;
+  color: whitesmoke
 }
 
 .rk-portfolio-category {
   letter-spacing: .021em;
+  color: whitesmoke
 }
 
 .rk-portfolio-inner-client span {

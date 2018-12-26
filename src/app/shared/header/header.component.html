@@ -15,12 +15,13 @@
       <ul class="rk-menu">
 
         <li routerLinkActive="active" class="rk-menu__item">
-          <a routerLink="home" class="rk-menu__link">Home</a>
+          <a routerLink="home" class="rk-menu__link">Gates Automation</a>
         </li>
 
         <li routerLinkActive="active" class="rk-menu__item">
-          <a routerLink= "blog" class="rk-menu__link">Blog</a>
+          <a routerLink= "iot" class="rk-menu__link">Iot</a>
         </li> 
+       
           <!--
             <li routerLinkActive= "active" class="rk-menu__item"><a href="about.html" class="rk-menu__link">About</a></li>
           -->
@@ -40,13 +41,19 @@
       
 
         <li routerLinkActive="active" class="rk-menu__item">
-          <a routerLink="about" class="rk-menu__link">About</a>
+          <a routerLink="contacto" class="rk-menu__link">Contacto</a>
         </li>
-      </ul>
+    
+
+      <li routerLinkActive="active" class="rk-menu__item">
+        <a target= "_blank" [href]="infoPaginaService.info.admin" >Area reservada</a>
+      </li>
+    </ul>
 <!--
   el  # es una referencia local a la caja div en este caso 
   por tanto puedo pasarla como parametro lo que se ingrese en el input 
   como txtBuscar.value
+  // es para no abrir un form 
 -->
       <div class="rk-search">
         <input
