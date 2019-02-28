@@ -15,7 +15,7 @@ const CACHE_DYNAMIC_LIMIT = 50;
 
 
 const APP_SHELL_STATIC = [
-    //'/',
+    '/',
     'index.html',
     'styles.29b83360a8554210302c.css',
     'favicon.ico',
@@ -67,6 +67,9 @@ self.addEventListener('install', e => {
     e.waitUntil(Promise.all([cacheStatic,cacheInmutable])); // espera que termine ambas promesas
 
 });
+
+
+
 
 // se dispara solo cuando la instalacion termina 
 self.addEventListener('activate', e => {
