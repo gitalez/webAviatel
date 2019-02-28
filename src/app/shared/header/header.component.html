@@ -6,20 +6,25 @@
     <svg><use xlink:href="assets/img/symbols.svg#bar"></use></svg>
   </label>
   <div class="ae-container-fluid rk-topbar">
-    <h1 class="rk-logo">
-      <a routerLink="home">{{infoPaginaService.info.titulo}}<sup>tm</sup></a>
-    </h1>
+      <h1 class="rk-logo">
+        <img src="assets/images/marca-fondo-claro116x30.png" alt="homepage" class="dark-logo h24"/>
+     <!--
 
+
+        <a routerLink="/web/home">{{infoPaginaService.info.titulo}}<sup>tm</sup></a>
+           -->
+    
+          </h1>
     <nav class="rk-navigation">
 
       <ul class="rk-menu">
 
         <li routerLinkActive="active" class="rk-menu__item">
-          <a routerLink="home" class="rk-menu__link">Gates Automation</a>
+          <a routerLink="/web/home" class="rk-menu__link">Gates Automation</a>
         </li>
 
         <li routerLinkActive="active" class="rk-menu__item">
-          <a routerLink= "iot" class="rk-menu__link">Iot</a>
+          <a routerLink= "/web/iot" class="rk-menu__link">Iot</a>
         </li> 
        
           <!--
@@ -41,15 +46,18 @@
       
 
         <li routerLinkActive="active" class="rk-menu__item">
-          <a routerLink="contacto" class="rk-menu__link">Contacto</a>
+          <a routerLink="/web/contacto" class="rk-menu__link">Contacto</a>
         </li>
     
 
       <li routerLinkActive="active" class="rk-menu__item">
-        <a target= "_blank" [href]="infoPaginaService.info.admin" >Area reservada</a>
+        <a target= "_blank" href="https://www.google.com" class= "rk-menu__link">Admin</a>
       </li>
     </ul>
 <!--
+  target= "_blank" [href]="infoPaginaService.info.admin"
+routerLink="/web/admin"
+
   el  # es una referencia local a la caja div en este caso 
   por tanto puedo pasarla como parametro lo que se ingrese en el input 
   como txtBuscar.value

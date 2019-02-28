@@ -5,6 +5,11 @@ svg rect{
   fill: black;
 }
 
+.pointer {
+  cursor: pointer;
+}
+
+
 .animated {
     -webkit-animation-duration: 0.5s;
     animation-duration: 0.5s;

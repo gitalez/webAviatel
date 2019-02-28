@@ -6,7 +6,7 @@ import { ProductoDescripcion } from '../../interfaces/producto-descripcion.inter
 @Component({
   selector: 'app-item',
   templateUrl: './item.component.html',
-  styleUrls: ['./item.component.scss']
+  styleUrls: ['./item.component.css']
 })
 export class ItemComponent implements OnInit {
 

@@ -223,10 +223,21 @@ git status
 
 git commit -m "26-12-18 commit"
 
+git status 
+
+git push 
+
+
+esta vez no hace falta hacer nada ( ir a setting del proyecto , como la primera vez 
+ver  mas arriba )
+para desplegar porque ya esta inicializado la parte de github pages 
 
 
 
 
+
+
+//////// operacion git con  sw 
 
 
 
