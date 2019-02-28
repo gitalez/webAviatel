@@ -15,24 +15,26 @@ const CACHE_DYNAMIC_LIMIT = 50;
 
 
 const APP_SHELL_STATIC = [
-    '/',
+    //'/',
     'index.html',
     'styles.29b83360a8554210302c.css',
     'favicon.ico',
     //'main.f999928f865d56bbee80.js',
-    'runtime.ec2944dd8b20ec099bf3.js',
+    //'runtime.ec2944dd8b20ec099bf3.js',
     //'polyfills.1ef83d22ada557f4a131.js'
 
-]
+];
 
 
 const APP_SHELL_INMUTABLE = [
+
     'assets/css/aurora-pack.min.css',
     'assets/css/aurora-theme-base.min.css',
     'assets/css/urku.css',
     'assets/js/svg4everybody.min.js',
+    'runtime.ec2944dd8b20ec099bf3.js',
     
-]
+];
 
 function limpiarCache(cacheName,numeroItemsQueQuedan ){
 
@@ -83,13 +85,18 @@ self.addEventListener('activate', e => {
                     if( key !== CACHE_STATIC_NAME && key.includes('static')){ // borro solo los estaticos 
                         return caches.delete(key)
                     }
-
+                    
+                    if (  key !== CACHE_DYNAMIC_NAME && key.includes('dynamic') ) {
+                        return caches.delete(key);
+                    }
             });
 
     })
     e.waitUntil(respuesta);
 
 })
+
+
 
 
 /////////////////// 2 -  estrategia cache with network fallback ////////////////////////
