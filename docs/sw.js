@@ -18,11 +18,7 @@ const APP_SHELL_STATIC = [
     //'/',
     'index.html',
     'styles.29b83360a8554210302c.css',
-    'favicon.ico',
-    //'main.f999928f865d56bbee80.js',
-    //'runtime.ec2944dd8b20ec099bf3.js',
-    //'polyfills.1ef83d22ada557f4a131.js'
-
+    'favicon.ico'
 ];
 
 
@@ -33,6 +29,8 @@ const APP_SHELL_INMUTABLE = [
     'assets/css/urku.css',
     'assets/js/svg4everybody.min.js',
     'runtime.ec2944dd8b20ec099bf3.js',
+    'polyfills.1ef83d22ada557f4a131.js',
+    'main.f999928f865d56bbee80.js'
     
 ];
 
