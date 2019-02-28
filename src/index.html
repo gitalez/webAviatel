@@ -41,7 +41,8 @@
 <script>
  
  var url = window.location.href;
- var swLocation = '/webAviatel/sw.js'
+ var swLocation = '/webAviatel/sw.js';
+
   if ( navigator.serviceWorker ) {
 
     console.log('existe');
@@ -51,7 +52,9 @@
       console.log('sw instalado en forma local');
     }
 
-    navigator.serviceWorker.register('swLocation')
+    console.log('sw instalado en forma remota');
+    
+    navigator.serviceWorker.register(swLocation)
       .then(()=> {
           console.log('service worker instalado');
       })
