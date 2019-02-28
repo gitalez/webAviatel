@@ -241,3 +241,31 @@ para desplegar porque ya esta inicializado la parte de github pages
 
 
 
+hacemos :
+
+ng build --prod 
+genera la carpeta dist 
+dentro de dist genera un folder aviatel 
+INCORPORAMOS AL DIST/AVIATEL EL SW.JS Y EL MANIFEST.JSON
+con el finder lo ponemos a nivel raiz y luego lo renombramoa a docs
+
+hacemos 
+ git status
+
+git add .
+
+git status 
+
+git commit -m "26-12-18 commit"
+
+git status 
+
+git push 
+
+
+esta vez no hace falta hacer nada ( ir a setting del proyecto , como la primera vez 
+ver  mas arriba )
+para desplegar porque ya esta inicializado la parte de github pages 
+
+y ya !!!
+

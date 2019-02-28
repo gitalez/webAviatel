@@ -40,11 +40,17 @@
 <!---->
 <script>
  
+ var url = window.location.href;
+ var swLocation = '/webAviatel/sw.js'
   if ( navigator.serviceWorker ) {
 
     console.log('existe');
 
-    navigator.serviceWorker.register('sw.js')
+    if(url.includes('localhost')){
+      swLocation = 'sw.js'
+    }
+
+    navigator.serviceWorker.register('swLocation')
       .then(()=> {
           console.log('service worker instalado');
       })
