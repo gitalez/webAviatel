@@ -47,7 +47,8 @@
     console.log('existe');
 
     if(url.includes('localhost')){
-      swLocation = 'sw.js'
+      swLocation = 'sw.js';
+      console.log('sw instalado en forma local');
     }
 
     navigator.serviceWorker.register('swLocation')
