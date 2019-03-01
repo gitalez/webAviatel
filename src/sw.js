@@ -13,24 +13,25 @@ const CACHE_INMUTABLE_NAME = 'inmutable-v1';
 const CACHE_DYNAMIC_LIMIT = 50;
 
 
-
+// las cosas hechas por mi 
 const APP_SHELL_STATIC = [
     //'/',
     'index.html',
     'styles.29b83360a8554210302c.css',
-    'favicon.ico'
+    'favicon.ico',
+    'runtime.ec2944dd8b20ec099bf3.js',
+    'polyfills.1ef83d22ada557f4a131.js',
+    'main.10d65f6a961bede60e8d.js'
 ];
 
-
+// las cosas hechas por otros
 const APP_SHELL_INMUTABLE = [
 
     'assets/css/aurora-pack.min.css',
     'assets/css/aurora-theme-base.min.css',
     'assets/css/urku.css',
     'assets/js/svg4everybody.min.js',
-    'runtime.ec2944dd8b20ec099bf3.js',
-    'polyfills.1ef83d22ada557f4a131.js',
-    'main.f999928f865d56bbee80.js'
+  
     
 ];
 
