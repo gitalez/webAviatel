@@ -17,7 +17,7 @@ const CACHE_DYNAMIC_LIMIT = 50;
 const APP_SHELL_STATIC = [
     //'/',
     'index.html',
-    'styles.29b83360a8554210302c.css',
+    'styles.dbe1dad067b7359cf2cf.css',
     'assets/img/favicon.ico',
     'runtime.ec2944dd8b20ec099bf3.js',
     'polyfills.1ef83d22ada557f4a131.js',
