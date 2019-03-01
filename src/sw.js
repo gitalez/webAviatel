@@ -18,7 +18,7 @@ const APP_SHELL_STATIC = [
     //'/',
     'index.html',
     'styles.29b83360a8554210302c.css',
-    'favicon.ico',
+    'assets/img/favicon.ico',
     'runtime.ec2944dd8b20ec099bf3.js',
     'polyfills.1ef83d22ada557f4a131.js',
     'main.10d65f6a961bede60e8d.js'
@@ -27,10 +27,10 @@ const APP_SHELL_STATIC = [
 // las cosas hechas por otros
 const APP_SHELL_INMUTABLE = [
 
-    '/assets/css/aurora-pack.min.css',
-    '/assets/css/aurora-theme-base.min.css',
-    '/assets/css/urku.css',
-    '/assets/js/svg4everybody.min.js',
+    'assets/css/aurora-pack.min.css',
+    'assets/css/aurora-theme-base.min.css',
+    'assets/css/urku.css',
+    'assets/js/svg4everybody.min.js',
   
     
 ];
